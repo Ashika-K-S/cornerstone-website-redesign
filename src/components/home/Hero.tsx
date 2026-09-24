@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="bg-slate-100 py-10 sm:py-14 lg:py-16">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+    <section className="bg-slate-100 pt-7 pb-10 sm:pt-8 sm:pb-12 lg:pt-6 lg:pb-14">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:-translate-y-2">
         <div>
-          <span className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
-            Trusted solutions
-          </span>
-          <h1 className="mt-5 max-w-xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">
+            Cornerstone International
+          </p>
+          <h1 className="mt-3.5 max-w-xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
             Quality products and services for a healthier, safer tomorrow.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">

@@ -7,7 +7,6 @@ import { RotateCcw } from "lucide-react";
 import { ProductFilter } from "@/components/products/ProductFilter";
 import { ProductGrid } from "@/components/products/ProductGrid";
 import { ProductSearch } from "@/components/products/ProductSearch";
-import { SolutionFinder } from "@/components/products/SolutionFinder";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
 import {
@@ -88,8 +87,8 @@ function ProductsContent() {
       : categories.find((c) => c.slug === selectedCategory)?.name;
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 space-y-16">
-      {/* 1. Page Header */}
+    <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 space-y-10">
+      {/* 1. Page Header & Short Introduction */}
       <div className="border-b border-slate-200 pb-8">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">
           Our Products
@@ -102,22 +101,24 @@ function ProductsContent() {
         </p>
       </div>
 
-      {/* 2. FIND THE RIGHT SOLUTION (Guided Solution Finder) */}
-      <SolutionFinder />
+      {/* 2. Product Search, Category Filters & Result Count */}
+      <section aria-labelledby="catalogue-controls-heading" className="space-y-6">
+        <h2 id="catalogue-controls-heading" className="sr-only">
+          Filter and Search Products
+        </h2>
 
-      {/* 3. PRODUCT SEARCH & CATEGORY FILTERING */}
-      <section id="catalogue-browser" aria-labelledby="browse-catalogue-heading" className="space-y-8 pt-4">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <h2 id="browse-catalogue-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              Browse All Products
-            </h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Filter by industry division or search by product name, category, or specification.
-            </p>
+        {/* Search Bar & Result Count */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="w-full sm:max-w-md">
+            <ProductSearch
+              value={searchQuery}
+              onChange={handleSearchChange}
+              onClear={() => handleSearchChange("")}
+              placeholder="Search products..."
+            />
           </div>
 
-          {/* Results Count Badge */}
+          {/* Results Count Badge & Reset */}
           <div className="flex items-center gap-3 self-start sm:self-auto">
             <div className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs sm:text-sm font-semibold text-slate-700 shadow-2xs">
               {filteredProducts.length === 1
@@ -138,17 +139,7 @@ function ProductsContent() {
           </div>
         </div>
 
-        {/* Search Input */}
-        <div className="max-w-xl">
-          <ProductSearch
-            value={searchQuery}
-            onChange={handleSearchChange}
-            onClear={() => handleSearchChange("")}
-            placeholder="Search products..."
-          />
-        </div>
-
-        {/* Category Filters */}
+        {/* Category Filter Navigation */}
         <div className="space-y-4">
           <ProductFilter
             categories={categories}
@@ -199,15 +190,18 @@ function ProductsContent() {
             </div>
           )}
         </div>
+      </section>
 
-        {/* Products Grid */}
-        <div className="pt-2">
-          <ProductGrid
-            products={filteredProducts}
-            onResetFilters={handleResetFilters}
-            isFiltered={isFiltered}
-          />
-        </div>
+      {/* 3. Products Grid */}
+      <section aria-labelledby="product-results-heading" className="pt-2">
+        <h2 id="product-results-heading" className="sr-only">
+          Product Results
+        </h2>
+        <ProductGrid
+          products={filteredProducts}
+          onResetFilters={handleResetFilters}
+          isFiltered={isFiltered}
+        />
       </section>
     </main>
   );
