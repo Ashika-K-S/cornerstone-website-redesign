@@ -1,0 +1,68 @@
+import type { VideoItem } from "@/types/product";
+
+export const videoItems: VideoItem[] = [
+  {
+    id: "fountain-of-life",
+    title: "Fountain of Life Users’ Testimonials",
+    category: "Health and Wellness",
+    description: "Customer experiences highlighting comfort, wellness, and everyday reliability with Fountain of Life.",
+    poster: "/images/resources/video-fountain-of-life.webp",
+    videoUrl: "https://www.youtube.com/watch?v=kBaPzWTF4yg",
+  },
+  {
+    id: "cornerstone-corporate",
+    title: "Cornerstone International Overview",
+    category: "Corporate",
+    description: "Overview of Cornerstone International’s product distribution, facilities, and service network.",
+    poster: "/images/resources/video-cornerstone-overview.webp",
+    videoUrl: "https://www.youtube.com/watch?v=Sit91XYkmRI",
+  },
+  {
+    id: "school-bus-sanification",
+    title: "Sanification of a school bus and classrooms",
+    category: "Hygiene Products",
+    description: "A practical hygiene transformation demonstrating dry steam sanitation in education facilities.",
+    poster: "/images/resources/video-school-bus-sanification.webp",
+    videoUrl: "https://www.youtube.com/watch?v=a194a1YyyWk",
+  },
+  {
+    id: "dental-unit-sanification",
+    title: "Dental unit sanification with dry steam",
+    category: "Hygiene Products",
+    description: "Dry steam treatment used to support clinical hygiene and strict dental care disinfection standards.",
+    poster: "/images/resources/video-dental-unit-sanification.webp",
+    videoUrl: "https://www.youtube.com/watch?v=jIclih1js_s",
+  },
+  {
+    id: "hotel-spa",
+    title: "Hotel and spa sanitisation with steam generators",
+    category: "Hygiene Products",
+    description: "Hospitality sanitation scenario focusing on guest room, spa comfort, and maintenance cleanliness.",
+    poster: "/images/resources/video-hotel-spa.webp",
+    videoUrl: "https://www.youtube.com/watch?v=bGjvNgF90M0",
+  },
+  {
+    id: "rehab-clinic",
+    title: "Rehab clinic sanification with dry steam",
+    category: "Health and Wellness",
+    description: "Healthcare sanitation demonstrating compliant dry steam disinfection in patient rehabilitation areas.",
+    poster: "/images/resources/video-rehab-clinic.webp",
+    videoUrl: "https://www.youtube.com/watch?v=14_L5O8rmHU",
+  },
+  {
+    id: "food-application",
+    title: "Food industry sanitisation with dry steam",
+    category: "Industrial",
+    description: "Heavy-duty Menikini dry steam equipment applied to commercial food processing surfaces and conveyor belts.",
+    poster: "/images/resources/video-food-application.webp",
+    videoUrl: "https://www.youtube.com/watch?v=kY7PSQnCdDs",
+  },
+  {
+    id: "ambulance-sanification",
+    title: "Sanification of an ambulance with Menikini products",
+    category: "Health and Wellness",
+    description: "Rapid mobile medical vehicle sanitisation ensuring sterile environments for emergency transport.",
+    poster: "/images/resources/video-ambulance-sanification.webp",
+    videoUrl: "https://www.youtube.com/watch?v=00oXygsTDOw",
+  },
+];

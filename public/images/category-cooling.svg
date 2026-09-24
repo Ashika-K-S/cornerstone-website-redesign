@@ -1,0 +1,8 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="36" fill="#0F172A"/>
+  <path d="M210 520C210 440 272 374 350 374H450C528 374 590 440 590 520V550H210V520Z" fill="#E0F2FE" fill-opacity="0.17"/>
+  <path d="M330 370L400 230L470 370H330Z" fill="#F8FAFC" fill-opacity="0.85"/>
+  <path d="M230 548H570" stroke="#F59E0B" stroke-width="20" stroke-linecap="round"/>
+  <path d="M305 520V600H495V520" stroke="#F8FAFC" stroke-width="16" stroke-linecap="round"/>
+  <text x="400" y="655" text-anchor="middle" fill="#F8FAFC" font-size="42" font-family="Arial, sans-serif" font-weight="700">Cooling</text>
+</svg>

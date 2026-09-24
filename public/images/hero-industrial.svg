@@ -1,0 +1,25 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="142" y1="57" x2="1052" y2="702" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="0.5" stop-color="#123A63"/>
+      <stop offset="1" stop-color="#1F6EB5"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="642" y1="157" x2="1081" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF6FF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#C6E2FF" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="320" cy="180" r="220" fill="#F59E0B" fill-opacity="0.15"/>
+  <circle cx="920" cy="120" r="160" fill="#60A5FA" fill-opacity="0.2"/>
+  <rect x="640" y="150" width="420" height="420" rx="26" fill="url(#panel)" stroke="#C7D8F6" stroke-opacity="0.42"/>
+  <path d="M710 520C711.5 468.6 754.1 427.5 806.2 427.5H914.8C956.7 427.5 993 461.5 995 503.2V520H710Z" fill="#F8FAFC" fill-opacity="0.12"/>
+  <path d="M720 500L770 400H836L866 500H720Z" fill="#F8FAFC" fill-opacity="0.8"/>
+  <path d="M824 500L874 332H942L980 500H824Z" fill="#F8FAFC" fill-opacity="0.64"/>
+  <path d="M758 400H976" stroke="#F59E0B" stroke-width="10" stroke-linecap="round"/>
+  <rect x="206" y="246" width="160" height="20" rx="10" fill="#F59E0B" fill-opacity="0.9"/>
+  <rect x="206" y="283" width="290" height="18" rx="9" fill="#DDEAFE" fill-opacity="0.75"/>
+  <rect x="206" y="319" width="240" height="18" rx="9" fill="#DDEAFE" fill-opacity="0.5"/>
+  <text x="206" y="180" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="26" font-weight="700">Cornerstone International</text>
+</svg>
